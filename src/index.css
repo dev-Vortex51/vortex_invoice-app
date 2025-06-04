@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("/LeagueSpartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("/LeagueSpartan-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "League Spartan";
+  src: url("/LeagueSpartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --width-main: 730px;
+  --color-01: #7c5dfa;
+  --color-02: #9277ff;
+  --color-03: #1e2139;
+  --color-04: #252945;
+  --color-05: #dfe3fa;
+  --color-06: #888eb0;
+  --color-07: #7e88c3;
+  --color-08: #0c0e16;
+  --color-09: #ec5757;
+  --color-10: #ff9797;
+  --color-11: #f8f8fb;
+  --color-12: #141625;
+  --color-13: #979797;
+  --color-14: rgba(72, 84, 159, 0.25);
+  --color-15: #373b53;
+  --color-16: #858bb2;
+  --color-17: #f9fafe;
+  --font-primary: "League Spartan", system-ui, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+@layer base {
+  body {
+    @apply font-primary bg-11 dark:bg-12;
+  }
+}
+
+@media (max-width: 767px) {
+  .max-md\:grid {
+    grid-template-areas:
+      "id client"
+      "due status"
+      "total status";
+  }
+}
