@@ -10,7 +10,7 @@ const Filter = () => {
     <div className="relative" ref={filterRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="hidden text-04 dark:text-white font-semibold  dark:text-white lg:flex cursor-pointer items-center gap-2 hover:opacity-80 transition-opacity"
+        className="hidden text-04 dark:text-white font-semibold   lg:flex cursor-pointer items-center gap-2 hover:opacity-80 transition-opacity"
       >
         Filter by status
         <span
@@ -24,7 +24,7 @@ const Filter = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden text-04 dark:text-white font-semibold dark:text-white flex cursor-pointer items-center gap-2 hover:opacity-80 transition-opacity"
+        className="lg:hidden text-04 dark:text-white font-semibold  flex cursor-pointer items-center gap-2 hover:opacity-80 transition-opacity"
       >
         Filter
         <span

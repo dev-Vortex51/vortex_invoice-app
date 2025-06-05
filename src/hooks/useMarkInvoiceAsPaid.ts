@@ -14,8 +14,8 @@ export const useMarkInvoiceAsPaid = () => {
         { status: "Paid" }
       );
     },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["invoices"] });
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["invoice"] });
       showToast("Invoice marked as paid", "success");
     },
     onError: () => {

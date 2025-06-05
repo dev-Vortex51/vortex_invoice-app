@@ -13,6 +13,9 @@ export const useDeleteInvoice = () => {
       showToast(`Invoice  deleted successfully`, "success");
       navigate("/invoice-app");
     },
+    onError: () => {
+      showToast(`Invoice  failed to be deleted`, "error");
+    },
   });
 
   return { deleteInvoiceFn, isPending };
